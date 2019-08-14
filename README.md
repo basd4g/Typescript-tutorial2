@@ -7,7 +7,14 @@
 1. add C3.js(a external javascript library)
 1. Use Chunk (devide a module from external javascript library)
 
+## Compile
+
+    tsc app.ts
+    webpack app.js --output bundle.js --mode=development
+
 ## Boot
+
+open `./index.html` on web browswer.
 
 ## Reference
 
