@@ -2,21 +2,20 @@ const path = require('path');
 module.exports = {
     entry: {
         bundle: './app.ts'
-    },
+    },  
     output: {
         path: path.join(__dirname,'/'),
         filename: '[name].js'
     },
-    //Chunk's setting
+    // Chunk 's setting
     optimization: {
-        spritChunks: {
-            name: 'vendor',
-            chunks: 'initial',
-        }
+      splitChunks: {
+        name: 'vendor',
+        chunks: 'initial',
+      }
     },
-    
     resolve: {
-        extentions:['.ts','.js']
+        extensions:['.ts','.js']
     },
     devServer: {
         contentBase: path.join(__dirname,'/')
